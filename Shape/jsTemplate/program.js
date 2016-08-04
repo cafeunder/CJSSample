@@ -66,6 +66,7 @@ onload = function(){
 		//mouse位置
 		mouseLabel.text = "mouse(" + stage.mouseX + "," + stage.mouseY + ")";
 
+
 		stage.update();
 	});
 };

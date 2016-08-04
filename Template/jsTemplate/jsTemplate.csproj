@@ -52,9 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="point.js" />
-    <Content Include="queue.js" />
-    <Content Include="stack.js" />
+    <Content Include="mouse.js" />
     <Content Include="program.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
