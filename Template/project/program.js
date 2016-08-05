@@ -4,7 +4,6 @@
 var STAGE_HEIGHT, STAGE_WIDTH;
 //読み込みが完了したか？
 var loadComplete = false;
-//マウスオブジェクト
 
 onload = function(){
 	//ステージの生成（引数はキャンバスID）
