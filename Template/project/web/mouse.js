@@ -20,7 +20,6 @@ Mouse.prototype.mouseDown = function(){
 }
 
 Mouse.prototype.mouseUp = function(){
-	console.log(this);
 	this.down = false;
 }
 

@@ -94,7 +94,7 @@ onload = function(){
 	//ステージから削除
 	stage.removeChild(clone);
 
-
+	imageMgr.loadImages("main");
 	//画像のロード
 	var queue = new createjs.LoadQueue(true);
 	//画像のID,URLの連想配列を作る
