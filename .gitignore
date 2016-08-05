@@ -152,8 +152,4 @@ log.txt
 *.exe
 *.manifest
 
-Web.config
-Web.Debug.config
-Web.Release.config
 bin/
-Properties/
