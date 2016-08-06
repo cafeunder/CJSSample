@@ -159,7 +159,21 @@ onload = function(){
 	createjs.Ticker.on("tick", function () {
 		if(!bool){
 			console.log(fileManager.isLoaded("main"));
-			console.log(fileManager.getResult("main", "temp1"));
+			if(fileManager.isLoaded("main")){
+				var bmp2 = new createjs.Bitmap(fileManager.getResult("main", "temp3"));
+
+				//幅・高さの取得
+				var bounds = bmp2.getBounds();
+				//絶対座標の指定
+				bmp2.regX = bounds.width/2;
+				bmp2.regY = bounds.height/2;
+				//相対座標の指定
+				bmp2.x = 300;
+				bmp2.y = 100;
+
+				stage.addChild(bmp2);
+			}
+			//bmpを生成した後なら、元ファイルを削除しても影響なし
 			fileManager.unload("main");
 			bool = true;
 		}
