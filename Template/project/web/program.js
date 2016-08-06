@@ -94,7 +94,6 @@ onload = function(){
 	//ステージから削除
 	stage.removeChild(clone);
 
-	imageMgr.loadImages("main");
 	//画像のロード
 	var queue = new createjs.LoadQueue(true);
 	//画像のID,URLの連想配列を作る
@@ -129,6 +128,11 @@ onload = function(){
 		loadComplete = true;
 	});
 
+	//自作ファイルマネージャの動作確認
+	fileManager.load("main");
+
+
+
 	//fps表示
 	var fpsLabel = new createjs.Text("-- fps", "bold 18px Arial", "#000");
 	stage.addChild(fpsLabel);
@@ -151,7 +155,15 @@ onload = function(){
 	createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
 
 	//タイマーイベント
+	var bool = false;
 	createjs.Ticker.on("tick", function () {
+		if(!bool){
+			console.log(fileManager.isLoaded("main"));
+			console.log(fileManager.getResult("main", "temp1"));
+			fileManager.unload("main");
+			bool = true;
+		}
+
 		mouse.update();
 		if(loadComplete){
 			bmp.rotation += 3;

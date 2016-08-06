@@ -51,7 +51,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web\imageMgr.js" />
+    <Content Include="web\fileManager.js" />
     <Content Include="web\index.html" />
     <Content Include="web\mouse.js" />
     <Content Include="web\program.js" />
