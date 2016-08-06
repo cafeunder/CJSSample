@@ -62,6 +62,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="web\sample.js" />
     <Content Include="web\util.js" />
   </ItemGroup>
   <ItemGroup>
